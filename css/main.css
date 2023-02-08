@@ -1,0 +1,211 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-color: #f4f9fc;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* estilos de HOME */
+
+header{
+    background-color: rgb(193, 245, 193);
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+}
+
+header img{
+    width: 15%;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* estilos de main */
+
+main{
+    text-align: center;
+    padding: 45px;
+}
+
+.videoRayuela{
+    margin-bottom: 40px;
+}
+
+main h1{
+    margin-bottom: 30px;
+    font-weight: 750;
+    font-size: 40px;
+}
+
+main p{
+    margin-bottom: 20px;
+}
+
+main h2{
+    margin-bottom: 15px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+main div img{
+    width: 35%;
+    padding: 10px;
+}
+
+/* estilos de footer */
+
+footer{
+    background-color: rgb(193, 245, 193);
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+footer h3{
+    padding-bottom: 10px;
+}
+
+footer h4{
+   font-size: 14px; 
+   font-weight: 550;
+}
+
+footer div a img{
+  display: inline-block;
+  width: 5%;  
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.imgFb{
+    width: 4,5%;
+}
+
+
+/* estilos de SOBRE NOSOTROS */
+
+.tituloNos{
+    text-align: left;
+}
+
+main div p{
+    text-align: left;
+}
+
+.imgNos{
+    width: 40%;
+}
+
+.imgFinal{
+    width: 25%;
+}
+
+main div div{
+    display: inline-block;
+}
+
+
+/* estilos de SERVICIOS */
+
+.tituloServ{
+    text-align: left;
+}
+
+main div ul li{
+    list-style: none;
+}
+
+
+/* estilos de PROMOCIONES */
+
+.tituloProm{
+    text-align: left;
+}
+
+main div h2{
+    text-align: left;
+    font-size: 25px;
+}
+
+main div div img{
+    float: right;
+    width: 25%;
+}
+
+.botonContacto{
+    background-color: rgb(222, 236, 18);
+    margin-left: 520px;
+    margin-right: 520px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    color: black;
+}
+
+
+/* estilos de CONTACTO */
+
+.tituloCont{
+    text-align: left;
+}
+
+.subtituloCont{
+    text-align: left;
+    font-size: 25px;
+    margin-top: -10px;
+    margin-bottom: 35px;
+}
+
+.botonEnviar{
+    margin-left: 160px;
+}
+
+.botonSend{
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+main form fieldset{
+    text-align: justify;
+}
+
+main form fieldset legend{
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+main form fieldset div{
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
