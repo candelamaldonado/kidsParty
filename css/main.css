@@ -125,6 +125,7 @@ footer h4{
 footer .redesSoc{
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 footer div a img{
