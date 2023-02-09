@@ -100,7 +100,7 @@ section div div img{
 
 /* estilos de los items de section */
 
-.imgSiete, .imgSeis{
+.imgSiete, .imgSeis, .imgNueve{
     display: none;
 }
 
@@ -109,7 +109,8 @@ section div div img{
 footer{
     background-color: rgb(193, 245, 193);
     text-align: center;
-    margin-top: -2rem;
+    padding: 0.4rem;
+    margin-top: 2.5rem;
 }
 
 footer h3{
@@ -118,24 +119,14 @@ footer h3{
 }
 
 footer h4{
-   font-size: 14px; 
-   font-weight: 550;
-}
-
-footer .redesSoc{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   font-size: 0.8rem; 
+   padding-top: 0.5rem;
 }
 
 footer div a img{
-  width: 10%;  
+  width: 5%;  
 }
-
-.imgFb{
-    width: 4,5%;
-}
-
+ 
 
 
 /* estilos de SOBRE NOSOTROS */
@@ -239,4 +230,24 @@ main form fieldset div{
     margin-left: 20px;
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+/* mq de tablet */
+
+@media screen and (min-width:600px){
+    section .contenedorImg{
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* mq de desktop */
+@media screen and (min-width:1024px){
+    section .imgSiete, .imgSeis, .imgNueve{
+        display: block;
+    }
+    section .contenedorImg{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
+    }
 }
