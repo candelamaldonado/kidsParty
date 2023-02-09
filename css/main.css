@@ -22,6 +22,7 @@ header{
     margin-top: 0.5rem;
     position: sticky;
     top: 0rem;
+    z-index: 2;
 
     display: flex;
     justify-content: space-around;
@@ -89,7 +90,7 @@ section .contenedorImg{
     gap: 1rem;
 
     grid-template-columns: 1fr ;
-    grid-template-rows: repeat(6, 15%);
+    grid-template-rows: repeat(6, 10%);
 }
 
 section div div img{
@@ -243,11 +244,106 @@ main form fieldset div{
 
 /* mq de desktop */
 @media screen and (min-width:1024px){
+    header nav ul li:hover{
+      border-bottom: 2.5px solid yellow; 
+      transform: scale(0.9); 
+    }
+
     section .imgSiete, .imgSeis, .imgNueve{
         display: block;
     }
     section .contenedorImg{
         grid-template-columns: repeat(3, 1fr) ;
         grid-template-rows: repeat(3, 1fr);
+    }
+
+    .imgUno{
+        transition: 0.5s;
+    }
+
+    .imgUno:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgDos{
+        transition: 0.5s;
+    }
+
+    .imgDos:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgTres{
+        transition: 0.5s;
+    }
+
+    .imgTres:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgCuatro{
+        transition: 0.5s;
+    }
+
+    .imgCuatro:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgCinco{
+        transition: 0.5s;
+    }
+
+    .imgCinco:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgSeis{
+        transition: 0.5s;
+    }
+
+    .imgSeis:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgSiete{
+        transition: 0.5s;
+    }
+
+    .imgSiete:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgOcho{
+        transition: 0.5s;
+    }
+
+    .imgOcho:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgNueve{
+        transition: 0.5s;
+    }
+
+    .imgNueve:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
     }
 }
