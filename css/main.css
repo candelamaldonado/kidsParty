@@ -177,19 +177,23 @@ main div h2{
     font-size: 25px;
 }
 
-main div div img{
-    float: right;
-    width: 25%;
+main div div div .card-img-top{
+    width: 40%;
+}
+
+main div div div div .card-text .text-muted{
+    text-align: end;
 }
 
 .botonContacto{
-    background-color: rgb(222, 236, 18);
+    background-color: yellow;
     margin-left: 520px;
     margin-right: 520px;
     margin-top: 20px;
     padding: 15px;
     border-radius: 50px;
     color: black;
+    font-size: 1.5rem;
 }
 
 

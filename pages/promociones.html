@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--link css bootstrap descarga-->
-    <link rel="stylesheet" href="css/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
     <!--link a mi css-->
     <link rel="stylesheet" href="../css/main.css">
     <title>Promociones - Rayuela</title>
@@ -37,18 +37,53 @@
 
      <!-- contenido principal -->
     <main>
-        <h1> Promociones </h1>
-        <div class="container-fluid bg-main" style="background-color: whitesmoke;">
+        <h1 class="tituloProm"> Promociones </h1>
+        <!-- class container/container-fluid es obligatoria y esta en el contenedor padre-->
+        <div class="container-fluid">
+            <!-- class obligatoria que crea 12 columnas-->
             <div class="row">
-                <div class="col-4">
-                    <div class="card mb-3">
-                        <img src="../img/promodiasem.jpeg" class="card-img-top" alt="...">
+                <!-- CARDS -->
+                <div class="card mb-3 col-lg-12" style="min-width: 1024px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../img/promodiasem.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
                         <div class="card-body">
-                          <h5 class="card-title">Promo días de semana</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Promo válida durante todo 2023</small></p>
+                          <h2 class="card-title">Promo días de semana</h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis a optio culpa quod veniam doloremque aspernatur eveniet et pariatur velit tempore explicabo voluptatem omnis, quasi ab numquam nihil facilis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eveniet magnam dolor sint earum praesentium assumenda deleniti deserunt. Voluptatem laudantium aspernatur fuga eum atque veritatis et, quis id provident minima!</p>
+                          <p class="card-text"><small class="text-muted">Promo válida para todo 2023</small></p>
                         </div>
                       </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-12" style="min-width: 1024px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../img/promomediod.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h2 class="card-title">Promo mediodía + panchos </h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis a optio culpa quod veniam doloremque aspernatur eveniet et pariatur velit tempore explicabo voluptatem omnis, quasi ab numquam nihil facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, natus quia eum eveniet repellendus quibusdam, assumenda dolore culpa saepe doloremque exercitationem! Alias, at laudantium esse voluptatum illum vel veritatis aliquam?</p>
+                          <p class="card-text"><small class="text-muted">Promo válida para todo 2023</small></p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card mb-3 col-lg-12" style="min-width: 1024px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="../img/promoreduc.jpeg" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h2 class="card-title">Promo cumples reducidos</h2>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nobis a optio culpa quod veniam doloremque aspernatur eveniet et pariatur velit tempore explicabo voluptatem omnis, quasi ab numquam nihil facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio cupiditate eos soluta dolore cum, officia impedit eveniet magnam minima deleniti voluptate ipsum laborum, hic vero consequuntur rem veniam. Fuga, voluptate?</p>
+                          <p class="card-text"><small class="text-muted">Promo válida para todo 2023</small></p>
+                        </div>
+                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,6 +107,6 @@
     </footer>
 
     <!-- link a js bootstrap descarga -->
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
