@@ -12,32 +12,18 @@ body {
     text-decoration: none; }
 
 /*estilos de header */
-header {
-  background-color: #c1f5c1;
-  margin-top: 0.5rem;
-  position: sticky;
-  top: 0rem;
-  z-index: 2;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap; }
-  header img {
-    width: 18%; }
-  header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.3rem; }
-    header nav ul li a {
-      color: black;
-      font-weight: bold; }
+header nav div a .imgLogo {
+  width: 25%; }
+
+header nav div div .navbar-nav {
+  gap: 1.5rem; }
 
 /*estilos de footer */
 footer {
-  background-color: #c1f5c1;
+  background-color: #f8d557;
   text-align: center;
   padding: 0.4rem;
-  margin-top: 2.5rem; }
+  margin-top: 2rem; }
   footer h3 {
     font-size: 1.3rem;
     padding-bottom: 10px; }
@@ -74,7 +60,7 @@ footer {
     font-size: 2.2rem;
     text-align: center; }
   .sectionHome .contenedorImg {
-    height: 250vh;
+    height: 300vh;
     margin: 1rem;
     display: grid;
     gap: 1rem;

@@ -24,40 +24,21 @@ body{
 /*estilos de header */
 
 header{
-    background-color: nth($colores, 1);
-    margin-top: 0.5rem;
-    position: sticky;
-    top: 0rem;
-    z-index: 2;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-    img{
-        width: 18%;
+    nav div a .imgLogo{
+        width: 25%;
     }
-
-    nav ul{
-        list-style: none;
-        display: flex;
-        gap: 1.3rem;
-
-        li a{
-            color: black;
-            font-weight: bold;
-        }
+    nav div div .navbar-nav{it 
+        gap: 1.5rem;
     }
 }
 
 /*estilos de footer */
 
 footer{
-    background-color: nth($colores, 1);
+    background-color: nth($colores, 2);
     text-align: center;
     padding: 0.4rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 
     h3{
         font-size: 1.3rem;
