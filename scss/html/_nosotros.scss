@@ -1,0 +1,29 @@
+// variables 
+@import "../utilidades/vars";
+@import "../utilidades/listas";
+
+/*estilos de NOSOTROS */
+
+/* estilos de main */
+
+.mainNosotros{
+    .tituloNos{
+        text-align: left;
+    }
+    
+    div p{
+        text-align: left;
+    }
+    
+    .imgNos{
+        width: 40%;
+    }
+    
+    .imgFinal{
+        width: 25%;
+    }
+    
+    div div{
+        display: inline-block;
+    }
+}

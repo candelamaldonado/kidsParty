@@ -1,0 +1,179 @@
+// variables 
+@import "../utilidades/vars";
+@import "../utilidades/listas";
+
+/*estilos de HOME */
+
+/* estilos de main */
+
+.mainHome{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .videoRayuela img{
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 2rem;
+    }
+
+    h1{
+        margin-bottom: 1.8rem;
+        font-weight: 750;
+        font-size: 2.5rem;
+    }
+
+    p{
+        margin-bottom: 1.3rem;
+    }
+}
+
+/* estilos de section */
+.sectionHome{
+    h2{
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .contenedorImg{
+        height: 250vh ;
+        margin: 1rem;
+        display: grid;
+        gap: 1rem;
+    
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(6, 10%);
+    }
+    div div img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* estilos de los items de section */
+    .imgSiete, .imgSeis, .imgNueve{
+        display: none;
+    }
+}
+
+//MEDIA QUERIES
+/* mq de tablet */
+
+@media screen and (min-width:600px){
+    .sectionHome .contenedorImg{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* mq de desktop */
+@media screen and (min-width:1024px){
+    header nav ul li:hover{
+      border-bottom: 2.5px solid nth($colores, 2); 
+      transform: scale(0.9); 
+    }
+
+    .sectionHome .contenedorImg{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: repeat(3, 1fr);
+
+        .imgSiete, .imgSeis, .imgNueve{
+            display: block;
+        }
+    }
+
+    .imgUno{
+        transition: 0.5s;
+    }
+
+    .imgUno:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgDos{
+        transition: 0.5s;
+    }
+
+    .imgDos:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgTres{
+        transition: 0.5s;
+    }
+
+    .imgTres:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgCuatro{
+        transition: 0.5s;
+    }
+
+    .imgCuatro:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgCinco{
+        transition: 0.5s;
+    }
+
+    .imgCinco:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgSeis{
+        transition: 0.5s;
+    }
+
+    .imgSeis:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgSiete{
+        transition: 0.5s;
+    }
+
+    .imgSiete:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgOcho{
+        transition: 0.5s;
+    }
+
+    .imgOcho:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+
+    .imgNueve{
+        transition: 0.5s;
+    }
+
+    .imgNueve:hover{
+        transform: scale(1.1);
+        opacity: 85%;
+        transition: 0.5s;
+    }
+}
+

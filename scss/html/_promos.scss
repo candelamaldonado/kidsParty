@@ -1,0 +1,42 @@
+// variables 
+@import "../utilidades/vars";
+@import "../utilidades/listas";
+
+/*estilos de PROMOS */
+
+/* estilos de main */
+
+.mainPromo{
+    .tituloProm{
+        text-align: left;
+        margin-bottom: 2.1rem;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    
+    div h2{
+        text-align: left;
+        font-size: 2rem;
+    }
+    
+    div div div .card-img-top{
+        width: 40%;
+    }
+    
+    div div div div .card-text .text-muted{
+        text-align: end;
+    }
+    
+    .botonUno{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .botonContacto{
+            background-color: nth($colores, 2);
+            border-radius: 5rem;
+            color: black;
+            font-size: 2rem;
+        }   
+    }
+}

@@ -1,353 +1,247 @@
 /* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* estilos globales */
+body {
+  background-color: #f4f9fc;
+  font-family: 'Poppins', sans-serif; }
+  body a {
+    text-decoration: none; }
 
-/* estilos generales */
-
-body{
-    background-color: #f4f9fc;
-    font-family: 'Roboto', sans-serif;
-}
-
-a{
-    text-decoration: none;
-}
-
-header{
-    background-color: rgb(193, 245, 193);
-    margin-top: 0.5rem;
-    position: sticky;
-    top: 0rem;
-    z-index: 2;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-header img{
-    width: 18%;
-}
-
-header nav ul{
+/*estilos de header */
+header {
+  background-color: #c1f5c1;
+  margin-top: 0.5rem;
+  position: sticky;
+  top: 0rem;
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  header img {
+    width: 18%; }
+  header nav ul {
     list-style: none;
     display: flex;
-    gap: 1.3rem;
-}
+    gap: 1.3rem; }
+    header nav ul li a {
+      color: black;
+      font-weight: bold; }
 
-header nav ul li a{
-    color: black;
-    font-weight: bold;
-}
-
+/*estilos de footer */
+footer {
+  background-color: #c1f5c1;
+  text-align: center;
+  padding: 0.4rem;
+  margin-top: 2.5rem; }
+  footer h3 {
+    font-size: 1.3rem;
+    padding-bottom: 10px; }
+  footer h4 {
+    font-size: 0.8rem;
+    padding-top: 0.5rem; }
+  footer div a img {
+    width: 5%; }
 
 /*estilos de HOME */
-
 /* estilos de main */
-
-main{
-    text-align: center;
-    padding: 2rem;
-    display: flex;
-
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-main .videoRayuela img{
+.mainHome {
+  text-align: center;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .mainHome .videoRayuela img {
     width: 100%;
     object-fit: cover;
-    margin-bottom: 2rem;
-}
-
-main h1{
+    margin-bottom: 2rem; }
+  .mainHome h1 {
     margin-bottom: 1.8rem;
     font-weight: 750;
-    font-size: 2.5rem;
-}
-
-main p{
-    margin-bottom: 1.3rem;
-}
+    font-size: 2.5rem; }
+  .mainHome p {
+    margin-bottom: 1.3rem; }
 
 /* estilos de section */
-
-section h2{
+.sectionHome {
+  /* estilos de los items de section */ }
+  .sectionHome h2 {
     font-size: 2.2rem;
-    text-align: center;
-}
-
-section .contenedorImg{
-    height: 280vh ;
+    text-align: center; }
+  .sectionHome .contenedorImg {
+    height: 250vh;
     margin: 1rem;
     display: grid;
     gap: 1rem;
-
-    grid-template-columns: 1fr ;
-    grid-template-rows: repeat(6, 10%);
-}
-
-section div div img{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 10%); }
+  .sectionHome div div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-/* estilos de los items de section */
-
-.imgSiete, .imgSeis, .imgNueve{
-    display: none;
-}
-
-/* estilos de footer */
-
-footer{
-    background-color: rgb(193, 245, 193);
-    text-align: center;
-    padding: 0.4rem;
-    margin-top: 2.5rem;
-}
-
-footer h3{
-    font-size: 1.3rem;
-    padding-bottom: 10px;
-}
-
-footer h4{
-   font-size: 0.8rem; 
-   padding-top: 0.5rem;
-}
-
-footer div a img{
-  width: 5%;  
-}
- 
-
-
-/* estilos de SOBRE NOSOTROS */
-
-.tituloNos{
-    text-align: left;
-}
-
-main div p{
-    text-align: left;
-}
-
-.imgNos{
-    width: 40%;
-}
-
-.imgFinal{
-    width: 25%;
-}
-
-main div div{
-    display: inline-block;
-}
-
-
-
-/* estilos de SERVICIOS */
-
-.tituloServ{
-    text-align: left;
-}
-
-main div ul li{
-    list-style: none;
-}
-
-
-
-/* estilos de PROMOCIONES */
-
-.tituloProm{
-    text-align: left;
-}
-
-main div h2{
-    text-align: left;
-    font-size: 25px;
-}
-
-main div div div .card-img-top{
-    width: 40%;
-}
-
-main div div div div .card-text .text-muted{
-    text-align: end;
-}
-
-.botonContacto{
-    background-color: yellow;
-    margin-left: 520px;
-    margin-right: 520px;
-    margin-top: 20px;
-    padding: 15px;
-    border-radius: 50px;
-    color: black;
-    font-size: 1.5rem;
-}
-
-
-
-/* estilos de CONTACTO */
-
-.tituloCont{
-    text-align: left;
-}
-
-.subtituloCont{
-    text-align: left;
-    font-size: 25px;
-    margin-top: -10px;
-    margin-bottom: 35px;
-}
-
-.botonEnviar{
-    margin-left: 160px;
-}
-
-.botonSend{
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-main form fieldset{
-    text-align: justify;
-}
-
-main form fieldset legend{
-    margin-left: 20px;
-    font-size: 18px;
-}
-
-main form fieldset div{
-    margin-left: 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
+    object-fit: cover; }
+  .sectionHome .imgSiete, .sectionHome .imgSeis, .sectionHome .imgNueve {
+    display: none; }
 
 /* mq de tablet */
-
-@media screen and (min-width:600px){
-    section .contenedorImg{
-        grid-template-columns: repeat(2, 1fr) ;
-        grid-template-rows: repeat(3, 1fr);
-    }
-}
+@media screen and (min-width: 600px) {
+  .sectionHome .contenedorImg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); } }
 
 /* mq de desktop */
-@media screen and (min-width:1024px){
-    header nav ul li:hover{
-      border-bottom: 2.5px solid yellow; 
-      transform: scale(0.9); 
-    }
+@media screen and (min-width: 1024px) {
+  header nav ul li:hover {
+    border-bottom: 2.5px solid #f8d557;
+    transform: scale(0.9); }
+  .sectionHome .contenedorImg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+    .sectionHome .contenedorImg .imgSiete, .sectionHome .contenedorImg .imgSeis, .sectionHome .contenedorImg .imgNueve {
+      display: block; }
+  .imgUno {
+    transition: 0.5s; }
+  .imgUno:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgDos {
+    transition: 0.5s; }
+  .imgDos:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgTres {
+    transition: 0.5s; }
+  .imgTres:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgCuatro {
+    transition: 0.5s; }
+  .imgCuatro:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgCinco {
+    transition: 0.5s; }
+  .imgCinco:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgSeis {
+    transition: 0.5s; }
+  .imgSeis:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgSiete {
+    transition: 0.5s; }
+  .imgSiete:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgOcho {
+    transition: 0.5s; }
+  .imgOcho:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; }
+  .imgNueve {
+    transition: 0.5s; }
+  .imgNueve:hover {
+    transform: scale(1.1);
+    opacity: 85%;
+    transition: 0.5s; } }
 
-    section .imgSiete, .imgSeis, .imgNueve{
-        display: block;
-    }
-    section .contenedorImg{
-        grid-template-columns: repeat(3, 1fr) ;
-        grid-template-rows: repeat(3, 1fr);
-    }
+/*estilos de CONTACTO */
+/* estilos de main */
+.mainContacto .tituloCont {
+  text-align: left;
+  margin: 2rem 1rem 0.2rem 1rem; }
 
-    .imgUno{
-        transition: 0.5s;
-    }
+.mainContacto .subtituloCont {
+  text-align: left;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem; }
 
-    .imgUno:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
+.mainContacto form fieldset {
+  text-align: justify; }
+  .mainContacto form fieldset legend {
+    margin-left: 1rem;
+    font-size: 18px; }
+  .mainContacto form fieldset div {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem; }
+  .mainContacto form fieldset .botonEnviar {
+    margin-left: 1rem; }
+  .mainContacto form fieldset .botonSend {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-left: 9rem; }
 
-    .imgDos{
-        transition: 0.5s;
-    }
+/*estilos de NOSOTROS */
+/* estilos de main */
+.mainNosotros .tituloNos {
+  text-align: left; }
 
-    .imgDos:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
+.mainNosotros div p {
+  text-align: left; }
 
-    .imgTres{
-        transition: 0.5s;
-    }
+.mainNosotros .imgNos {
+  width: 40%; }
 
-    .imgTres:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
+.mainNosotros .imgFinal {
+  width: 25%; }
 
-    .imgCuatro{
-        transition: 0.5s;
-    }
+.mainNosotros div div {
+  display: inline-block; }
 
-    .imgCuatro:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
+/*estilos de PROMOS */
+/* estilos de main */
+.mainPromo .tituloProm {
+  text-align: left;
+  margin-bottom: 2.1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem; }
 
-    .imgCinco{
-        transition: 0.5s;
-    }
+.mainPromo div h2 {
+  text-align: left;
+  font-size: 2rem; }
 
-    .imgCinco:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
+.mainPromo div div div .card-img-top {
+  width: 40%; }
 
-    .imgSeis{
-        transition: 0.5s;
-    }
+.mainPromo div div div div .card-text .text-muted {
+  text-align: end; }
 
-    .imgSeis:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
+.mainPromo .botonUno {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .mainPromo .botonUno .botonContacto {
+    background-color: #f8d557;
+    border-radius: 5rem;
+    color: black;
+    font-size: 2rem; }
 
-    .imgSiete{
-        transition: 0.5s;
-    }
+/*estilos de SERVICIOS */
+/* estilos de main */
+.mainServicios .tituloServ {
+  text-align: left; }
 
-    .imgSiete:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
-
-    .imgOcho{
-        transition: 0.5s;
-    }
-
-    .imgOcho:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
-
-    .imgNueve{
-        transition: 0.5s;
-    }
-
-    .imgNueve:hover{
-        transform: scale(1.1);
-        opacity: 85%;
-        transition: 0.5s;
-    }
-}
+.mainServicios div ul li {
+  list-style: none; }
