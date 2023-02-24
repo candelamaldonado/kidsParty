@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!--link css bootstrap descarga-->
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
     <!--link a mi css-->
     <link rel="stylesheet" href="../css/main.css">
     <title>Contacto - Rayuela</title>
@@ -24,7 +26,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="sobreNosotros.html">Sobre nosotros</a>
@@ -36,7 +38,7 @@
                 <a class="nav-link" href="promociones.html">Promociones</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
+                <a class="nav-link active" href="contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
@@ -52,24 +54,24 @@
          <form> 
             <fieldset>
                 <legend> Completa tus datos </legend>
-
-                <div>
+                <div class="grillaInput">
+                  <div class="itemUno">
                     <label for="nombre_apellido"> Nombre y apellido: </label>
                     <input type="text" name="nombre_apellido">
                 </div>
-                <div>
+                <div class="itemDos">
                     <label for="email_usuario"> Email: </label>
                     <input type="email" name="email_usuario">
                 </div>
-                <div>
+                <div class="idemTres">
                     <label for="tel_usuario"> Teléfono: </label>
                     <input type="number" name="tel_usuario">
                 </div>
-                <div>
+                <div class="itemCuatro">
                     <label for="fecha_usuario"> Fecha: </label>
                     <input type="date" name="fecha_usuario">
                 </div>
-                <div>
+                <div class="itemCinco">
                     <label for="consulta"> Consulta: </label>
                     <textarea name="consulta" id="" cols="30" rows="7"></textarea>
                 </div>
@@ -77,6 +79,7 @@
                 <div class="botonEnviar">
                     <input class="botonSend" type="submit">
                 </div>
+              </div>  
             </fieldset>
          </form>
      </main>
@@ -95,5 +98,7 @@
         <h4> Rayuela Fiestas - Todos los derechos reservados </h4>
     </footer>
 
+    <!-- link a js bootstrap descarga -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -8,11 +8,74 @@
 /* estilos de main */
 
 .mainServicios{
+    margin-left: 1rem;
     .tituloServ{
         text-align: left;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        color: nth($colores, 5);
     }
-    
-    div ul li{
-        list-style: none;
+    div{
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        ul li{
+            list-style: none;
+        }
+    }
+}
+
+.sectionServicios{
+    margin: 1rem;
+    div div .carousel-item{
+        height: 50vh;
+        min-height: 300px;
+        img{
+            width: 40%;
+            object-fit: cover;
+        }
+    }
+}
+
+//MEDIA QUERIES 
+
+/* mq de tablet */
+@media screen and (min-width:600px){
+    .mainServicios div{
+        display: flex;
+        flex-direction: row;
+    }
+    .sectionServicios{
+        div div .carousel-item{
+            height: 50vh;
+            min-height: 300px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/* mq de desktop */
+@media screen and (min-width:1024px){
+    .mainServicios div{
+        display: flex;
+        flex-direction: row;
+        div{
+            flex-direction: column;
+        }
+    }
+    .sectionServicios{
+        div div .carousel-item{
+            height: 100vh;
+            min-height: 300px;
+            img{
+                width: 50%;
+                object-fit: cover;
+            }
+        }
     }
 }

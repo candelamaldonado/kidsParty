@@ -20,7 +20,7 @@ header nav div div .navbar-nav {
 
 /*estilos de footer */
 footer {
-  background-color: #f8d557;
+  background-color: #c1f5c1;
   text-align: center;
   padding: 0.4rem;
   margin-top: 2rem; }
@@ -150,7 +150,8 @@ footer {
 /* estilos de main */
 .mainContacto .tituloCont {
   text-align: left;
-  margin: 2rem 1rem 0.2rem 1rem; }
+  margin: 2rem 1rem 1rem 1rem;
+  color: #43af66; }
 
 .mainContacto .subtituloCont {
   text-align: left;
@@ -165,7 +166,7 @@ footer {
   .mainContacto form fieldset legend {
     margin-left: 1rem;
     font-size: 18px; }
-  .mainContacto form fieldset div {
+  .mainContacto form fieldset .grillaInput {
     margin-left: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem; }
@@ -178,31 +179,82 @@ footer {
     padding-bottom: 0.5rem;
     margin-left: 9rem; }
 
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    form fieldset .grillaInput {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem; }
+      form fieldset .grillaInput .itemCinco, form fieldset .grillaInput .botonEnviar {
+        grid-column: span 2; } }
+
+/* mq de desktop */
+@media screen and (min-width: 1024px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    form fieldset .grillaInput {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem; }
+      form fieldset .grillaInput .itemCinco, form fieldset .grillaInput .botonEnviar {
+        grid-column: span 2; } }
+
 /*estilos de NOSOTROS */
 /* estilos de main */
-.mainNosotros .tituloNos {
-  text-align: left; }
+.mainNosotros {
+  margin-left: 1rem;
+  margin-right: 1rem; }
+  .mainNosotros .tituloNos {
+    text-align: left;
+    margin-top: 2rem;
+    color: #43af66; }
+  .mainNosotros div p {
+    text-align: left; }
+  .mainNosotros .contenedorNos {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .mainNosotros .contenedorNos .imgNos {
+      width: 40%; }
+  .mainNosotros h2 {
+    text-align: center;
+    font-size: large;
+    margin-top: 1rem; }
+  .mainNosotros div div {
+    display: inline-block; }
 
-.mainNosotros div p {
-  text-align: left; }
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+  .mainNosotros div {
+    display: flex; }
+    .mainNosotros div .imgNos {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .mainNosotros h2 {
+    margin-top: 1rem; } }
 
-.mainNosotros .imgNos {
-  width: 40%; }
-
-.mainNosotros .imgFinal {
-  width: 25%; }
-
-.mainNosotros div div {
-  display: inline-block; }
+/* mq de desktop */
+@media screen and (min-width: 1024px) {
+  .mainNosotros div {
+    display: flex; }
+    .mainNosotros div .imgNos {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .mainNosotros h2 {
+    margin-top: 1rem; } }
 
 /*estilos de PROMOS */
 /* estilos de main */
 .mainPromo .tituloProm {
   text-align: left;
-  margin-bottom: 2.1rem;
-  margin-top: 1rem;
-  margin-right: 1rem;
-  margin-left: 1rem; }
+  margin: 2rem 1rem 0.2rem 1rem;
+  color: #43af66; }
 
 .mainPromo div h2 {
   text-align: left;
@@ -226,8 +278,53 @@ footer {
 
 /*estilos de SERVICIOS */
 /* estilos de main */
-.mainServicios .tituloServ {
-  text-align: left; }
+.mainServicios {
+  margin-left: 1rem; }
+  .mainServicios .tituloServ {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    color: #43af66; }
+  .mainServicios div {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .mainServicios div ul li {
+      list-style: none; }
 
-.mainServicios div ul li {
-  list-style: none; }
+.sectionServicios {
+  margin: 1rem; }
+  .sectionServicios div div .carousel-item {
+    height: 50vh;
+    min-height: 300px; }
+    .sectionServicios div div .carousel-item img {
+      width: 40%;
+      object-fit: cover; }
+
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+  .mainServicios div {
+    display: flex;
+    flex-direction: row; }
+  .sectionServicios div div .carousel-item {
+    height: 50vh;
+    min-height: 300px; }
+    .sectionServicios div div .carousel-item img {
+      width: 100%;
+      object-fit: cover; } }
+
+/* mq de desktop */
+@media screen and (min-width: 1024px) {
+  .mainServicios div {
+    display: flex;
+    flex-direction: row; }
+    .mainServicios div div {
+      flex-direction: column; }
+  .sectionServicios div div .carousel-item {
+    height: 100vh;
+    min-height: 300px; }
+    .sectionServicios div div .carousel-item img {
+      width: 50%;
+      object-fit: cover; } }

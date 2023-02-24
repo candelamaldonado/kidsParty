@@ -9,10 +9,8 @@
 .mainPromo{
     .tituloProm{
         text-align: left;
-        margin-bottom: 2.1rem;
-        margin-top: 1rem;
-        margin-right: 1rem;
-        margin-left: 1rem;
+        margin: 2rem 1rem 0.2rem 1rem;
+        color: nth($colores, 5);
     }
     
     div h2{

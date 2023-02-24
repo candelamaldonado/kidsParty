@@ -7,23 +7,72 @@
 /* estilos de main */
 
 .mainNosotros{
+    margin-left: 1rem;
+    margin-right: 1rem;
     .tituloNos{
         text-align: left;
+        margin-top: 2rem;
+        color: nth($colores, 5);
     }
     
     div p{
         text-align: left;
     }
     
-    .imgNos{
+    .contenedorNos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      .imgNos{
         width: 40%;
+
+    }  
     }
     
-    .imgFinal{
-        width: 25%;
+    h2{
+        text-align: center;
+        font-size: large;
+        margin-top: 1rem;
     }
     
     div div{
         display: inline-block;
+    }
+}
+
+
+//MEDIA QUERIES
+
+/* mq de tablet */
+@media screen and (min-width:600px){
+    .mainNosotros{
+        div{
+            display: flex;
+            .imgNos{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        h2{
+            margin-top: 1rem;
+        }
+    }
+}
+
+/* mq de desktop */
+@media screen and (min-width:1024px){
+    .mainNosotros{
+        div{
+            display: flex;
+            .imgNos{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        h2{
+            margin-top: 1rem;
+        }
     }
 }

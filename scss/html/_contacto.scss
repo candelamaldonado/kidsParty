@@ -9,9 +9,9 @@
 .mainContacto{
     .tituloCont{
         text-align: left;
-        margin: 2rem 1rem 0.2rem 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        color: nth($colores, 5);
     }
-    
     .subtituloCont{
         text-align: left;
         font-size: 1rem;
@@ -20,29 +20,64 @@
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    
-    
-    form fieldset{
-        text-align: justify;
-        legend{
-            margin-left: 1rem;
-            font-size: 18px;
-        }
-        div{
+    form{
+        fieldset{
+            text-align: justify;
+            legend{
+                margin-left: 1rem;
+                font-size: 18px;
+            }
+            .grillaInput{
             margin-left: 1rem;
             margin-top: 0.5rem;
             margin-bottom: 0.5rem;
+            }
+            .botonEnviar{
+                margin-left: 1rem;
+            }
+            .botonSend{
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                margin-left: 9rem;
+            }     
         }
-        .botonEnviar{
-            margin-left: 1rem;
+    }        
+}
+
+
+//MEDIA QUERIES
+
+/* mq de tablet */
+@media screen and (min-width:600px){
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        fieldset .grillaInput{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            .itemCinco, .botonEnviar{
+                grid-column: span 2;
+            }
         }
-        .botonSend{
-            padding-left: 1.5rem;
-            padding-right: 1.5rem;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            margin-left: 9rem;
-        }
-        
     }
+}
+
+/* mq de desktop */
+@media screen and (min-width:1024px){
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        fieldset .grillaInput{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5rem;
+            .itemCinco, .botonEnviar{
+                grid-column: span 2;
+            }
+        }
+    }
+    
 }
