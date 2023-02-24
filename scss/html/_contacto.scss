@@ -2,6 +2,7 @@
 @import "../utilidades/vars";
 @import "../utilidades/listas";
 @import "../utilidades/mixin";
+@import "../utilidades/extend";
 
 /*estilos de CONTACTO */
 
@@ -9,7 +10,7 @@
 
 .mainContacto{
     .tituloCont{
-        @include titulos;
+        @extend %titulos;
     }
     .subtituloCont{
         text-align: left;

@@ -18,9 +18,3 @@
     padding: 0.4rem;
     margin-top: 2rem;
 }
-
-@mixin titulos{
-    text-align: left;
-    margin: 2rem 1rem 0.5rem 1rem;
-    color: nth($colores, 5);
-}

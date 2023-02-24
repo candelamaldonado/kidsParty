@@ -2,6 +2,7 @@
 @import "../utilidades/vars";
 @import "../utilidades/listas";
 @import "../utilidades/mixin";
+@import "../utilidades/extend";
 
 
 /*estilos de SERVICIOS */
@@ -11,7 +12,7 @@
 .mainServicios{
     margin-left: 1rem;
     .tituloServ{
-        @include titulos;
+        @extend %titulos;
     }
     div{
         margin-top: 1rem;

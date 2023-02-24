@@ -1,6 +1,7 @@
 // variables 
 @import "../utilidades/vars";
 @import "../utilidades/listas";
+@import "../utilidades/extend";
 
 /*estilos de NOSOTROS */
 
@@ -10,7 +11,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     .tituloNos{
-        @include titulos;
+        @extend %titulos;
     }
     
     div p{

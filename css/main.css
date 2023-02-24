@@ -146,13 +146,13 @@ footer {
     opacity: 85%;
     transition: 0.5s; } }
 
-/*estilos de CONTACTO */
-/* estilos de main */
-.mainContacto .tituloCont {
+.mainContacto .tituloCont, .mainNosotros .tituloNos, .mainPromo .tituloProm, .mainServicios .tituloServ {
   text-align: left;
   margin: 2rem 1rem 0.5rem 1rem;
   color: #43af66; }
 
+/*estilos de CONTACTO */
+/* estilos de main */
 .mainContacto .subtituloCont {
   text-align: left;
   font-size: 1rem;
@@ -203,15 +203,16 @@ footer {
       form fieldset .grillaInput .itemCinco, form fieldset .grillaInput .botonEnviar {
         grid-column: span 2; } }
 
+.mainContacto .tituloCont, .mainNosotros .tituloNos, .mainPromo .tituloProm, .mainServicios .tituloServ {
+  text-align: left;
+  margin: 2rem 1rem 0.5rem 1rem;
+  color: #43af66; }
+
 /*estilos de NOSOTROS */
 /* estilos de main */
 .mainNosotros {
   margin-left: 1rem;
   margin-right: 1rem; }
-  .mainNosotros .tituloNos {
-    text-align: left;
-    margin: 2rem 1rem 0.5rem 1rem;
-    color: #43af66; }
   .mainNosotros div p {
     text-align: left; }
   .mainNosotros .contenedorNos {
@@ -249,13 +250,13 @@ footer {
   .mainNosotros h2 {
     margin-top: 1rem; } }
 
-/*estilos de PROMOS */
-/* estilos de main */
-.mainPromo .tituloProm {
+.mainContacto .tituloCont, .mainNosotros .tituloNos, .mainPromo .tituloProm, .mainServicios .tituloServ {
   text-align: left;
   margin: 2rem 1rem 0.5rem 1rem;
   color: #43af66; }
 
+/*estilos de PROMOS */
+/* estilos de main */
 .mainPromo div h2 {
   text-align: left;
   font-size: 2rem; }
@@ -276,14 +277,15 @@ footer {
     font-size: 2rem;
     background-color: #f8d557; }
 
+.mainContacto .tituloCont, .mainNosotros .tituloNos, .mainPromo .tituloProm, .mainServicios .tituloServ {
+  text-align: left;
+  margin: 2rem 1rem 0.5rem 1rem;
+  color: #43af66; }
+
 /*estilos de SERVICIOS */
 /* estilos de main */
 .mainServicios {
   margin-left: 1rem; }
-  .mainServicios .tituloServ {
-    text-align: left;
-    margin: 2rem 1rem 0.5rem 1rem;
-    color: #43af66; }
   .mainServicios div {
     margin-top: 1rem;
     display: flex;
