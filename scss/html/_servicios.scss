@@ -1,6 +1,7 @@
 // variables 
 @import "../utilidades/vars";
 @import "../utilidades/listas";
+@import "../utilidades/mixin";
 
 
 /*estilos de SERVICIOS */
@@ -10,10 +11,7 @@
 .mainServicios{
     margin-left: 1rem;
     .tituloServ{
-        text-align: left;
-        margin-top: 2rem;
-        margin-left: 1rem;
-        color: nth($colores, 5);
+        @include titulos;
     }
     div{
         margin-top: 1rem;

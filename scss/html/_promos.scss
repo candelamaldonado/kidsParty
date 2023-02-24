@@ -1,6 +1,7 @@
 // variables 
 @import "../utilidades/vars";
 @import "../utilidades/listas";
+@import "../utilidades/mixin";
 
 /*estilos de PROMOS */
 
@@ -8,9 +9,7 @@
 
 .mainPromo{
     .tituloProm{
-        text-align: left;
-        margin: 2rem 1rem 0.2rem 1rem;
-        color: nth($colores, 5);
+        @include titulos;
     }
     
     div h2{
@@ -31,10 +30,7 @@
         align-items: center;
         justify-content: center;
         .botonContacto{
-            background-color: nth($colores, 2);
-            border-radius: 5rem;
-            color: black;
-            font-size: 2rem;
+            @include botones (5rem, black, 2rem)
         }   
     }
 }

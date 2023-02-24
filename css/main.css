@@ -150,7 +150,7 @@ footer {
 /* estilos de main */
 .mainContacto .tituloCont {
   text-align: left;
-  margin: 2rem 1rem 1rem 1rem;
+  margin: 2rem 1rem 0.5rem 1rem;
   color: #43af66; }
 
 .mainContacto .subtituloCont {
@@ -210,7 +210,7 @@ footer {
   margin-right: 1rem; }
   .mainNosotros .tituloNos {
     text-align: left;
-    margin-top: 2rem;
+    margin: 2rem 1rem 0.5rem 1rem;
     color: #43af66; }
   .mainNosotros div p {
     text-align: left; }
@@ -253,7 +253,7 @@ footer {
 /* estilos de main */
 .mainPromo .tituloProm {
   text-align: left;
-  margin: 2rem 1rem 0.2rem 1rem;
+  margin: 2rem 1rem 0.5rem 1rem;
   color: #43af66; }
 
 .mainPromo div h2 {
@@ -271,10 +271,10 @@ footer {
   align-items: center;
   justify-content: center; }
   .mainPromo .botonUno .botonContacto {
-    background-color: #f8d557;
     border-radius: 5rem;
     color: black;
-    font-size: 2rem; }
+    font-size: 2rem;
+    background-color: #f8d557; }
 
 /*estilos de SERVICIOS */
 /* estilos de main */
@@ -282,8 +282,7 @@ footer {
   margin-left: 1rem; }
   .mainServicios .tituloServ {
     text-align: left;
-    margin-top: 2rem;
-    margin-left: 1rem;
+    margin: 2rem 1rem 0.5rem 1rem;
     color: #43af66; }
   .mainServicios div {
     margin-top: 1rem;

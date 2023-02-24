@@ -10,9 +10,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     .tituloNos{
-        text-align: left;
-        margin-top: 2rem;
-        color: nth($colores, 5);
+        @include titulos;
     }
     
     div p{

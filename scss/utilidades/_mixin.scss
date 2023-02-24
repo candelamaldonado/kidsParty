@@ -1,0 +1,26 @@
+@import "listas";
+
+//mixin con parámetros
+
+@mixin botones($border-radius, $color, $font-size){
+    border-radius: $border-radius;
+    color: $color;
+    font-size: $font-size;
+    background-color: nth($colores, 2);
+}
+
+
+//mixin sin parámetros
+
+@mixin footer{
+    background-color: nth($colores, 1);
+    text-align: center;
+    padding: 0.4rem;
+    margin-top: 2rem;
+}
+
+@mixin titulos{
+    text-align: left;
+    margin: 2rem 1rem 0.5rem 1rem;
+    color: nth($colores, 5);
+}

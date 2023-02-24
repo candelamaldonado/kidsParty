@@ -1,6 +1,7 @@
 // hoja de estilos globales 
 @import "utilidades/vars";
 @import "utilidades/listas";
+@import "utilidades/mixin";
 
 /* reset */
 
@@ -35,10 +36,7 @@ header{
 /*estilos de footer */
 
 footer{
-    background-color: nth($colores, 1);
-    text-align: center;
-    padding: 0.4rem;
-    margin-top: 2rem;
+    @include footer;
 
     h3{
         font-size: 1.3rem;
