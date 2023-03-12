@@ -67,7 +67,8 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 10%); }
     .sectionHome .contenedorImg div img {
-      width: 40%;
+      width: 100%;
+      height: 100%;
       object-fit: cover; }
   .sectionHome .imgSiete, .sectionHome .imgSeis, .sectionHome .imgNueve {
     display: none; }
@@ -212,13 +213,15 @@ footer {
 .mainNosotros {
   margin-left: 1rem;
   margin-right: 1rem; }
-  .mainNosotros div p {
-    text-align: left; }
-  .mainNosotros .contenedorNos {
+  .mainNosotros div .textNos p {
+    text-align: left;
+    display: flex;
+    width: 100%; }
+  .mainNosotros div .contenedorNos {
     display: flex;
     align-items: center;
     justify-content: center; }
-    .mainNosotros .contenedorNos .imgNos {
+    .mainNosotros div .contenedorNos .imgNos {
       width: 40%; }
   .mainNosotros h2 {
     text-align: center;
@@ -277,6 +280,11 @@ footer {
     color: black;
     font-size: 2rem;
     background-color: #f8d557; }
+
+/* mq de desktop */
+@media screen and (min-width: 1024px) {
+  .botonUno:hover {
+    transform: translateY(-4px) translateX(-2px); } }
 
 .mainContacto .tituloCont, .mainNosotros .tituloNos, .mainPromo .tituloProm, .mainServicios .tituloServ {
   text-align: left;

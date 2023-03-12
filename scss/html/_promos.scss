@@ -21,7 +21,7 @@
     div .row{
         align-items: baseline;
         div .card-img-top{
-        width: 40%;
+            width: 40%;
         }  
     } 
     
@@ -36,5 +36,12 @@
         .botonContacto{
             @include botones (5rem, black, 2rem)
         }   
+    }
+}
+
+/* mq de desktop */
+@media screen and (min-width:1024px){
+    .botonUno:hover{
+        transform: translateY(-4px) translateX(-2px);
     }
 }

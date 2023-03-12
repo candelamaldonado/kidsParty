@@ -14,19 +14,24 @@
         @extend %titulos;
     }
     
-    div p{
-        text-align: left;
+    
+    
+    div{
+        .textNos p{
+            text-align: left;
+            display: flex;
+            width: 100%;
+        }
+        .contenedorNos{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           .imgNos{
+                width: 40%;
+            }  
+        }
     }
     
-    .contenedorNos{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      .imgNos{
-        width: 40%;
-
-    }  
-    }
     
     h2{
         text-align: center;
