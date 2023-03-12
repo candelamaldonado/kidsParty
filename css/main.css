@@ -66,10 +66,9 @@ footer {
     gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 10%); }
-  .sectionHome div div img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; }
+    .sectionHome .contenedorImg div img {
+      width: 40%;
+      object-fit: cover; }
   .sectionHome .imgSiete, .sectionHome .imgSeis, .sectionHome .imgNueve {
     display: none; }
 
@@ -261,8 +260,10 @@ footer {
   text-align: left;
   font-size: 2rem; }
 
-.mainPromo div div div .card-img-top {
-  width: 40%; }
+.mainPromo div .row {
+  align-items: baseline; }
+  .mainPromo div .row div .card-img-top {
+    width: 40%; }
 
 .mainPromo div div div div .card-text .text-muted {
   text-align: end; }
@@ -297,12 +298,16 @@ footer {
 
 .sectionServicios {
   margin: 1rem; }
-  .sectionServicios div div .carousel-item {
-    height: 50vh;
-    min-height: 300px; }
-    .sectionServicios div div .carousel-item img {
-      width: 40%;
-      object-fit: cover; }
+  .sectionServicios #carouselExampleFade .carousel-control-prev .carousel-control-next-icon, .sectionServicios #carouselExampleFade .carousel-control-prev .carousel-control-prev-icon, .sectionServicios #carouselExampleFade .carousel-control-next .carousel-control-next-icon, .sectionServicios #carouselExampleFade .carousel-control-next .carousel-control-prev-icon {
+    filter: invert(1); }
+  .sectionServicios #carouselExampleFade .carousel-inner .carousel-item {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #f4f9fc;
+    min-height: 150px; }
+    .sectionServicios #carouselExampleFade .carousel-inner .carousel-item .d-block {
+      width: auto; }
 
 /* mq de tablet */
 @media screen and (min-width: 600px) {
@@ -325,7 +330,7 @@ footer {
       flex-direction: column; }
   .sectionServicios div div .carousel-item {
     height: 100vh;
-    min-height: 300px; }
+    min-height: 400px; }
     .sectionServicios div div .carousel-item img {
       width: 50%;
-      object-fit: cover; } }
+      object-fit: contain; } }
