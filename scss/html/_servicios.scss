@@ -28,14 +28,26 @@
 
 .sectionServicios{
     margin: 1rem;
-    div div .carousel-item{
-        height: 50vh;
-        min-height: 300px;
-        img{
-            width: 40%;
-            object-fit: cover;
+    #carouselExampleFade{
+        .carousel-control-prev, .carousel-control-next{
+            .carousel-control-next-icon, .carousel-control-prev-icon{
+                filter: invert(1);
+            }
         }
-    }
+        
+        .carousel-inner{
+            .carousel-item{
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-color: $color-fondo;
+                min-height: 150px;
+                .d-block{
+                    width: auto;
+                }
+            }
+        } 
+    } 
 }
 
 //MEDIA QUERIES 
@@ -70,10 +82,10 @@
     .sectionServicios{
         div div .carousel-item{
             height: 100vh;
-            min-height: 300px;
+            min-height: 400px;
             img{
                 width: 50%;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
     }

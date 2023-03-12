@@ -18,9 +18,12 @@
         font-size: 2rem;
     }
     
-    div div div .card-img-top{
+    div .row{
+        align-items: baseline;
+        div .card-img-top{
         width: 40%;
-    }
+        }  
+    } 
     
     div div div div .card-text .text-muted{
         text-align: end;
